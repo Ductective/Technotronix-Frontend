@@ -19,7 +19,7 @@ function Products() {
         product.map((item)=>(
         <section id='card' className='ml-[4%]' key={item.id}>
         <div className="img-container">
-          <img src={"http://localhost:3000/"+ item.img} alt="" />
+          <img src={"https://technotronix-backend.onrender.com"+ item.img} alt="" />
           <div className='desc'>
             <h1 className='text-[#fc6900] font-bold text-[1.5rem]'>{item.featured? "Featured" : 'Top Selling'}: {item.name}</h1>
             <p className='text-white font-bold text-[1rem]'>{item.price}</p>

@@ -28,7 +28,7 @@ function TopSelling() {
 
             {topSelling.map((item) =>(
                 <Card key={item._id}>
-                    <Link to={`/detail/${item._id}`}><img src={"http://localhost:3000/" +  item.img} alt="" className='h-[280px]' /></Link>
+                    <Link to={`/detail/${item._id}`}><img src={"https://technotronix-backend.onrender.com" +  item.img} alt="" className='h-[280px]' /></Link>
                     <p className='font-semibold'>{item.name}</p>
                     <p>₦{item.price}</p>
                     <button onClick={isAuthenticated ? ()=> addTocart(item._id) : login} className='bg-orange-500 text-white p-[10px] rounded mt-[10px]'>

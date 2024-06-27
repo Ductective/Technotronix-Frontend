@@ -111,7 +111,7 @@ const showAuthHeader = (<div  className=' sticky top-0 z-[20] flex items-center 
     <Link onClick={logout} className='text-[25px] font-medium hover:text-orange-500' to="">Logout</Link>
     {/* <Link className='text-[25px] font-medium hover:text-orange-500' to="/register">Signup</Link> */}
     <div className='text-[25px] font-medium flex items-center gap-2'>
-        <img src={"http://localhost:3000/" + user?.img} alt="" className='h-7 w-7 rounded-full' />
+        <img src={"https://technotronix-backend.onrender.com" + user?.img} alt="" className='h-7 w-7 rounded-full' />
         <p>Hi, {user?.firstName} </p>
     </div>
 </nav>

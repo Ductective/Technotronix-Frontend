@@ -25,7 +25,7 @@ export const EcomProvider = ({ children }) => {
 
   //Api fetchs
   const fetchProducts = async () => {
-    const response = await fetch("http://localhost:3000/api/product");
+    const response = await fetch("https://technotronix-backend.onrender.com/api/product");
     const data = await response.json();
     setProduct(data);
   };
@@ -56,7 +56,7 @@ export const EcomProvider = ({ children }) => {
   // };
   const addToCart = async (productId) => {
     try {
-     const res = await Fetch("http://localhost:3000/addToCart", {
+     const res = await Fetch("https://technotronix-backend.onrender.com/addToCart", {
          method: "POST",
          headers: {
              "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export const EcomProvider = ({ children }) => {
  }
  const fetchCart = async () => {
   try {
-    const res = await fetch("http://localhost:3000/cart", {
+    const res = await fetch("https://technotronix-backend.onrender.com/cart", {
       method: "GET",
       headers:{
         "Content-Type": "application/json",
